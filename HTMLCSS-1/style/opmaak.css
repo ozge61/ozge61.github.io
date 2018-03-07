@@ -1,0 +1,301 @@
+body {
+    background-image: url("https://www.muralswallpaper.com/app/uploads/black-marble-textures-plain.jpg") ;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px; }
+
+h1:hover{ 
+    color: #A3B1DC; }
+
+h2, h3, h4 {
+    text-decoration: none;
+    font-family: calibri light;
+    font-size: 20px;
+    font-weight:inherit;
+    padding: 10px;
+    color: black;
+    line-height: 25px; }
+h8 {
+    color:white;
+}
+h5 {
+    font-family: fantasy;
+    font-size: 40px;
+    color: white;
+}
+
+p{
+    font-family: fantasy;
+    font-size: 22px;
+}
+
+table {
+   font-family: calibri;
+   line-height: 30px;
+   font-size: 20px;
+   border: 4px black double;
+   border-radius: 20px 0px 20px 0px;
+   padding: 5px;
+    color: black;
+    width: 500px; }
+
+
+td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 100px; }
+
+#container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "menu menu"
+                         "inhoud inhoud"
+                         "contentje zijkant"
+                         "contentje zijkant2"
+                         "einde einde";
+    margin:60px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+#menu {
+    grid-area: menu;
+    background-color: #527394;
+    text-align: center;
+    font-family: calibri light;
+    font-weight: bold;
+    font-size: 30px;
+    border: 2px solid white;
+    padding: 2px;
+    border-radius: 50px 15px; }
+
+#inhoud {
+    grid-area: inhoud;
+    background-color: #7389AE;
+    border: 2px solid white;
+    margin: 8px; }
+
+#content {
+    grid-area: contentje;
+    background-color: #A3B1DC;
+    border: 2px solid white;
+    margin: 8px; }
+
+#content1 {
+    grid-area: contentje1;
+    background-color: #A3B1DC;
+    border: 2px solid white;
+    margin: 8px; }
+
+#content2 {
+    grid-area: contentje2;
+    background-color: #A3B1DC;
+    border: 2px solid white;
+    margin: 8px; }
+
+#content3 {
+    grid-area: contentje3;
+    background-color: #A3B1DC;
+    border: 2px solid white;
+    margin: 8px; }
+#content4 {
+    grid-area: contentje4;
+    background-color: #A3B1DC;
+    border: 2px solid white;
+    margin: 8px; }
+
+#zijkant {
+    grid-area: zijkant;
+    background-color: #2E4057;
+    border: 2px solid white;
+    margin: 8px; }
+
+#zijkant2 {
+    grid-area: zijkant2;
+    background-color: #2E4057;
+    border: 2px solid white;
+    margin: 8px; }
+#einde {
+    grid-area: einde;
+    background-color: #0F223C;
+    border: 2px solid white;
+    margin: 8px; }
+
+a:hover {
+    background-color: silver; }
+
+#menu2 li a{
+    color: white;
+}
+
+li a {
+    color: black; 
+    font-weight: bold; }
+
+#menu1 {
+    text-decoration: none;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 17px;
+}
+#menu2 {
+    color:white;
+    display: flex;
+    list-style-type:none;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+#container2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "menu menu"
+                         "inhoud inhoud"
+                         "contentje zijkant"
+                         "contentje1 zijkant2"
+                         "contentje2 zijkant2"
+                         "contentje3 zijkant2"
+                         "contentje4 zijkant2"
+                         "einde einde";
+    margin:60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "menu"
+                             "inhoud"
+                             "contentje"
+                             "zijkant"
+                             "zijkant2"
+                             "einde";
+        margin-left: 0px;
+        margin-right: 0px; }
+    #container2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "menu"
+                             "inhoud"
+                             "contentje"
+                             "contentje1"
+                             "contentje2"
+                             "contentje3"
+                             "contentje4"
+                             "zijkant"
+                             "zijkant2"
+                             "einde";
+        margin-left: 0px;
+        margin-right: 0px; }
+    #menu1 {
+    padding: 25px;
+    flex-direction: column;
+    align-items: center; }
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+    background-color: white;
+    }
+}
+
+@media only screen and (max-width:320px) {
+  body {
+    background-color: white;
+    }       
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
